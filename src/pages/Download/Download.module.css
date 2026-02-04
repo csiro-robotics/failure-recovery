@@ -1,0 +1,30 @@
+.downloadTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+}
+
+.downloadTable th,
+.downloadTable td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.downloadTable th {
+  background: #f1f1f1;
+  color: #444;
+  font-weight: 600;
+}
+
+.downloadLink {
+  color: #006622;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.downloadLink:hover {
+  text-decoration: underline;
+}
