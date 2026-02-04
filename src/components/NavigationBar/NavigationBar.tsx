@@ -55,7 +55,7 @@ const NavigationBar: FC<NavigationBarProps> = memo(({ navigationItems }) => {
     >
       <Container>
         <Navbar.Brand as={HashLink} to="/" smooth>
-          HOTFormerLoc
+          failure-recovery
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
