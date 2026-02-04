@@ -7,10 +7,10 @@ xxxxxx
 Field robots operate in environments where uncertainty, dynamic conditions, and sometimes limited sensing often lead to unmodelled/unpredicted behaviours that can cause system failures. Despite decades of progress in robot perception, planning, and control, real-world deployments continue to expose fundamental gaps in robustness: systems fail, degrade silently, or encounter edge cases that were never modelled during development. This workshop focuses on the next frontier in resilient autonomy: understanding, predicting, avoiding, and recovering from failures in real-world scenarios.
 This workshop will bring together researchers and practitioners working across sub-communities, including field and service robotics, localisation and mapping, multimodal perception, fault detection and diagnosis, resilient planning, learning-based failure prediction, human–robot interaction, and safety-critical autonomy. We aim to create a platform for cross-pollination between academic groups, governmental organisations, and industry teams deploying robots in agriculture and forestry, mining, construction, underwater exploration, planetary missions, and search-and-rescue.
 The intended audience includes PhD students, early-career researchers, and industry engineers who develop, deploy, or analyse robotic systems operating under extreme or uncertain conditions. Through invited talks, technical presentations, and panel discussions, participants will engage with questions such as:
- • How do we detect failures before they cascade?
- • Can robots adapt online when perception or actuation degrades?
- • How do we quantify risk and uncertainty in unstructured environments?
- • What frameworks allow robots to safely recover and continue their mission?
+ - How do we detect failures before they cascade?
+ - Can robots adapt online when perception or actuation degrades?
+ - How do we quantify risk and uncertainty in unstructured environments?
+ - What frameworks allow robots to safely recover and continue their mission?
 By uniting diverse perspectives, the workshop intends to outline a roadmap for next-generation resilient autonomy, accelerating progress toward robots that can not only operate, but thrive, in challenging real-world environments.
 
 
