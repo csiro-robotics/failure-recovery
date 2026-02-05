@@ -116,11 +116,11 @@ const Links: React.FC = () => {
 
   return (
     <div className={styles.buttonContainer}>
-      <button className={styles.navButton} onClick={() => navigate("/paper")}>
-        Paper
+      <button className={styles.navButton} onClick={() => navigate("/")}>
+        tbd
       </button>
       <a
-        href="https://arxiv.org/abs/2503.08140"
+        href="https://github.com/csiro-robotics"
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -129,10 +129,10 @@ const Links: React.FC = () => {
         }}
         className={styles.navButton}
       >
-        arXiv
+        tbd
       </a>
       <a
-        href="https://github.com/csiro-robotics/HOTFormerLoc"
+        href="https://github.com/csiro-robotics"
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -141,10 +141,10 @@ const Links: React.FC = () => {
         }}
         className={styles.navButton}
       >
-        GitHub
+        tbd
       </a>
-      <button className={styles.navButton} onClick={() => navigate("/dataset")}>
-        CS-Wild-Places Dataset
+      <button className={styles.navButton} onClick={() => navigate("/")}>
+        tbd
       </button>
     </div>
   );
@@ -191,18 +191,18 @@ const Contact: React.FC = () => {
   );
 };
 
-// const Updates: React.FC = () => {
-//   return (
-//     <section className={styles.section}>
-//       <h2 id="updates" className={styles.sectionHeading}>
-//         Updates
-//       </h2>
-//       <p className={styles.paragraph}>
-//         <b>2025 Mar:</b> CS-Wild-Places dataset released.
-//       </p>
-//     </section>
-//   );
-// };
+const Organisers: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <h2 id="organisers" className={styles.sectionHeading}>
+        Organisers
+      </h2>
+      {/* <p className={styles.paragraph}>
+        <b>2025 Mar:</b> CS-Wild-Places dataset released.
+      </p> */}
+    </section>
+  );
+};
 
 const Acknowledgements: React.FC = () => {
   return (
@@ -225,7 +225,7 @@ const Home = () => {
         <Links />
         <About />
         {/* <Visualise /> */}
-        {/* <Citation /> */}
+        <Organisers />
         <Contact />
         {/* <Updates /> */}
         <Acknowledgements />

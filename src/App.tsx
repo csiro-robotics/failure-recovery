@@ -14,48 +14,13 @@ const navigationItems: NavigationItem[] = [
     path: "/",
     children: [
       { label: "About", path: "/#about" },
-      { label: "Interactive Submap Visualisation", path: "/#visualise-submap" },
-      { label: "Citation", path: "/#citation" },
-      { label: "Contact Us", path: "/#contact" },
-      { label: "Updates", path: "/#updates" },
-      { label: "Acknowledgements", path: "/#acknowledgements" },
+      { label: "Invited Speakers", path: "/#invited-speakers" },
+      { label: "Schedule", path: "/#schedule" },
+      { label: "Best Paper Award", path: "/#best-paper-award" },
+      { label: "Papers", path: "/#papers" },
+      { label: "Organisers", path: "/#organisers" },
     ],
   },
-  // {
-  //   label: "HOTFormerLoc",
-  //   path: "/paper",
-  //   children: [
-  //     { label: "Summary", path: "/paper#summary" },
-  //     {
-  //       label: "Network Architecture",
-  //       path: "/paper#network-architecture",
-  //     },
-  //     {
-  //       label: "Experiments",
-  //       path: "/paper#experiments",
-  //     },
-  //     { label: "Future Work", path: "/paper#future-work" },
-  //   ],
-  // },
-  // {
-  //   label: "CS-Wild-Places",
-  //   path: "/dataset",
-  //   children: [
-  //     { label: "Overview", path: "/dataset#overview" },
-  //     { label: "Visualisation", path: "/dataset#visualisation" },
-  //     { label: "Methodology", path: "/dataset#methodology" },
-  //     { label: "Benchmarking", path: "/dataset#benchmarking" },
-  //   ],
-  // },
-  // {
-  //   label: "Downloads",
-  //   path: "/download",
-  //   children: [
-  //     { label: "Checkpoints", path: "/download#checkpoint" },
-  //     { label: "Dataset", path: "/download#dataset" },
-  //     { label: "Usage Examples", path: "/download#usage-examples" },
-  //   ],
-  // },
 ];
 
 function App() {

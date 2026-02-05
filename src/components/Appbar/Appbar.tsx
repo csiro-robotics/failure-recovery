@@ -24,57 +24,13 @@ const navigationItems: NavigationItem[] = [
     path: "/",
     children: [
       { label: "About", path: "/#about" },
-      { label: "Interactive Submap Visualisation", path: "/#visualise-submap" },
-      { label: "Citation", path: "/#citation" },
-      { label: "Contact Us", path: "/#contact" },
-      { label: "Updates", path: "/#updates" },
-      { label: "Acknowledgements", path: "/#acknowledgements" },
+      { label: "Invited Speakers", path: "/#invited-speakers" },
+      { label: "Schedule", path: "/#schedule" },
+      { label: "Best Paper Award", path: "/#best-paper-award" },
+      { label: "Papers", path: "/#papers" },
+      { label: "Organisers", path: "/#organisers" },
     ],
   },
-  // {
-  //   label: "HOTFormerLoc",
-  //   path: "/paper",
-  //   children: [
-  //     { label: "Summary", path: "/paper#summary" },
-  //     {
-  //       label: "Network Architecture",
-  //       path: "/paper#network-architecture",
-  //       children: [
-  //         { label: "HOTFormerLoc", path: "/paper#hotformerloc" },
-  //         { label: "Cyndrical Octree Attention", path: "/paper#coa" },
-  //         { label: "Pyramid Attention Pooling", path: "/paper#pap" },
-  //       ],
-  //     },
-  //     {
-  //       label: "Experiments",
-  //       path: "/paper#experiments",
-  //       children: [
-  //         { label: "Comparison to SOTA", path: "/paper#sota-comparison" },
-  //         { label: "Ablation Study", path: "/paper#ablation-study" },
-  //       ],
-  //     },
-  //     { label: "Future Work", path: "/paper#future-work" },
-  //   ],
-  // },
-  // {
-  //   label: "CS-Wild-Places",
-  //   path: "/dataset",
-  //   children: [
-  //     { label: "Overview", path: "/dataset#overview" },
-  //     { label: "Visualisation", path: "/dataset#visualisation" },
-  //     { label: "Methodology", path: "/dataset#methodology" },
-  //     { label: "Benchmarking", path: "/dataset#benchmarking" },
-  //   ],
-  // },
-  // {
-  //   label: "Downloads",
-  //   path: "/download",
-  //   children: [
-  //     { label: "Checkpoints", path: "/download#checkpoint" },
-  //     { label: "Dataset", path: "/download#dataset" },
-  //     { label: "Usage Examples", path: "/download#usage-examples" },
-  //   ],
-  // },
 ];
 
 const Appbar = ({ siteName }: { siteName: string }) => {
