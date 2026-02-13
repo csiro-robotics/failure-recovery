@@ -1,28 +1,28 @@
 import React from "react";
 import styles from "../../Common.module.css";
-import AuthorsBar from "../AuthorsBar/AuthorsBar";
+// import AuthorsBar from "../AuthorsBar/AuthorsBar";
 
 const Header: React.FC = () => {
-  const organisers = [
-    {
-      firstName: "Milad",
-      lastName: "Ramezani",
-      university: "CSIRO Data61",
-      link: "https://people.csiro.au/r/m/milad-ramezani",
-    },
-        {
-      firstName: "Tirthankar",
-      lastName: "Bandyopadhyay",
-      university: "CSIRO Data61",
-      link: "https://people.csiro.au/b/t/tirtha-bandy",
-    },
-        {
-      firstName: "Fahira",
-      lastName: "Afzal",
-      university: "CSIRO Data61",
-      // link: "https://people.csiro.au/a/f/fahira-afzal",
-    }
-  ];
+  // const organisers = [
+  //   {
+  //     firstName: "Milad",
+  //     lastName: "Ramezani",
+  //     university: "CSIRO Data61",
+  //     link: "https://people.csiro.au/r/m/milad-ramezani",
+  //   },
+  //       {
+  //     firstName: "Tirthankar",
+  //     lastName: "Bandyopadhyay",
+  //     university: "CSIRO Data61",
+  //     link: "https://people.csiro.au/b/t/tirtha-bandy",
+  //   },
+  //       {
+  //     firstName: "Fahira",
+  //     lastName: "Afzal",
+  //     university: "CSIRO Data61",
+  //     // link: "https://people.csiro.au/a/f/fahira-afzal",
+  //   }
+  // ];
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>

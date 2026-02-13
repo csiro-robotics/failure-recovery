@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "../../Common.module.css";
 import homeStyles from "./Home.module.css";
-import PCMVContainer from "../../components/PCMVContainer/PCMVContainer";
-import ContentBlock from "../../components/ContentBlock/ContentBlock";
+// import PCMVContainer from "../../components/PCMVContainer/PCMVContainer";
+// import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import { useNavigate } from "react-router-dom";
-import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+// import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
+// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import Header from "../../components/Header/Header";
 
 const About: React.FC = () => {
@@ -79,22 +79,22 @@ const About: React.FC = () => {
   );
 };
 
-const Visualise: React.FC = () => {
-  return (
-    <div>
-      <section className={styles.section}>
-        <h2 id="visualise-submap" className={styles.sectionHeading}>
-          Interactive Submap Visualisation
-        </h2>
-        <PCMVContainer
-          title1="Aerial View"
-          title2="Ground View"
-          isSingleViewer={false}
-        />
-      </section>
-    </div>
-  );
-};
+// const Visualise: React.FC = () => {
+//   return (
+//     <div>
+//       <section className={styles.section}>
+//         <h2 id="visualise-submap" className={styles.sectionHeading}>
+//           Interactive Submap Visualisation
+//         </h2>
+//         <PCMVContainer
+//           title1="Aerial View"
+//           title2="Ground View"
+//           isSingleViewer={false}
+//         />
+//       </section>
+//     </div>
+//   );
+// };
 
 // const GithubLink: React.FC = () => {
 //   return (

@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import DefaultPage from "./pages/DefaultPage";
-import PaperPage from "./pages/Paper";
-import DatasetPage from "./pages/Dataset";
-import DownloadPage from "./pages/Download";
+// import PaperPage from "./pages/Paper";
+// import DatasetPage from "./pages/Dataset";
+// import DownloadPage from "./pages/Download";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 
 const navigationItems: NavigationItem[] = [
