@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../Common.module.css";
 import org from "./Organisers.module.css";
 import ks from "./KeynoteSpeakers.module.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 
 const About: React.FC = () => {
@@ -53,39 +53,39 @@ const About: React.FC = () => {
   );
 };
 
-const Links: React.FC = () => {
-  const navigate = useNavigate();
+// const Links: React.FC = () => {
+//   const navigate = useNavigate();
 
-  return (
-    <div className={styles.buttonContainer}>
-      <button className={styles.navButton} onClick={() => navigate("/")}>
-        tbd
-      </button>
+//   return (
+//     <div className={styles.buttonContainer}>
+//       <button className={styles.navButton} onClick={() => navigate("/")}>
+//         tbd
+//       </button>
 
-      <a
-        className={styles.navButton}
-        href="https://github.com/csiro-robotics"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        tbd
-      </a>
+//       <a
+//         className={styles.navButton}
+//         href="https://github.com/csiro-robotics"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         tbd
+//       </a>
 
-      <a
-        className={styles.navButton}
-        href="https://github.com/csiro-robotics"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        tbd
-      </a>
+//       <a
+//         className={styles.navButton}
+//         href="https://github.com/csiro-robotics"
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         tbd
+//       </a>
 
-      <button className={styles.navButton} onClick={() => navigate("/")}>
-        tbd
-      </button>
-    </div>
-  );
-};
+//       <button className={styles.navButton} onClick={() => navigate("/")}>
+//         tbd
+//       </button>
+//     </div>
+//   );
+// };
 
 const Contact: React.FC = () => {
   return (
@@ -101,14 +101,15 @@ const Contact: React.FC = () => {
   );
 };
 
+const BASE = import.meta.env.BASE_URL;
 const keynoteSpeakers = [
-  { initials: "AA", name: "David Hsu" },
-  { initials: "BB", name: "Fabio Ramos" },
-  { initials: "CC", name: "Abhinav Valada" },
-  { initials: "DD", name: "Stefan Luetenegger" },
-  { initials: "EE", name: "Marco Pavone" },
-  { initials: "FF", name: "Will Madern" },
-  { initials: "GG", name: "Micol Spitale" },
+  { name: "David Hsu", image: `${BASE}speakers/David_Hsu.jpeg` },
+  { name: "Fabio Ramos", image: `${BASE}speakers/Fabio_Ramos.jpeg` },
+  { name: "Abhinav Valada", image: `${BASE}speakers/Abhinav_Valada.jpeg` },
+  { name: "Stefan Luetenegger", image: `${BASE}speakers/Stefan_Leutenegger.jpeg` },
+  { name: "Marco Pavone", image: `${BASE}speakers/Marco_Pavone.jpeg` },
+  { name: "Will Madern", image: `${BASE}speakers/Will_Maddern.jpeg` },
+  { name: "Micol Spitale", image: `${BASE}speakers/Micol_Spitale.jpeg` },
 ];
 
 const KeynoteSpeakers: React.FC = () => {
@@ -118,14 +119,18 @@ const KeynoteSpeakers: React.FC = () => {
         Keynote Speakers
       </h2>
 
-      <div className={ks.grid}>
-        {keynoteSpeakers.map((p) => (
-          <div key={p.name} className={ks.card}>
-            <div className={ks.avatar}>{p.initials}</div>
-            <p className={ks.name}>{p.name}</p>
-          </div>
-        ))}
+  <div className={ks.grid}>
+    {keynoteSpeakers.map((p) => (
+      <div key={p.name} className={ks.card}>
+        <img
+          src={p.image}
+          alt={p.name}
+          className={ks.photo}
+        />
+        <p className={ks.name}>{p.name}</p>
       </div>
+    ))}
+  </div>
     </section>
   );
 };
@@ -186,7 +191,7 @@ const Home: React.FC = () => {
     <div className={styles.container}>
       <Header />
       <main className={styles.main}>
-        <Links />
+        {/* <Links /> */}
         <About />
         <KeynoteSpeakers />
         <Organisers />
