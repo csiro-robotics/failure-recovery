@@ -16,13 +16,45 @@ const About: React.FC = () => {
         About
       </h2>
       <p className={styles.paragraph}>
-        Field robots operate in environments where uncertainty, dynamic conditions, and sometimes limited sensing often lead to unmodelled/unpredicted behaviours that can cause system failures. Despite decades of progress in robot perception, planning, and control, real-world deployments continue to expose fundamental gaps in robustness: systems fail, degrade silently, or encounter edge cases that were never modelled during development. This workshop focuses on the next frontier in resilient autonomy: understanding, predicting, avoiding, and recovering from failures in real-world scenarios.
-        This workshop will bring together researchers and practitioners working across sub-communities, including field and service robotics, localisation and mapping, multimodal perception, fault detection and diagnosis, resilient planning, learning-based failure prediction, human–robot interaction, and safety-critical autonomy. We aim to create a platform for cross-pollination between academic groups, governmental organisations, and industry teams deploying robots in agriculture and forestry, mining, construction, underwater exploration, planetary missions, and search-and-rescue.
-        The intended audience includes PhD students, early-career researchers, and industry engineers who develop, deploy, or analyse robotic systems operating under extreme or uncertain conditions. Through invited talks, technical presentations, and panel discussions, participants will engage with questions such as:
+      <p className={styles.paragraph}>
+        Rapid advances in physical AI, edge computing, and generalisable robot learning are
+        bringing robots closer to open-world deployment. Yet reliability remains the primary
+        barrier to large-scale adoption. As robots move into agriculture, mining, construction,
+        disaster response, and planetary exploration, failure recovery and avoidance become
+        central research challenges. This workshop focuses on resilient autonomy: predicting,
+        avoiding, understanding, runtime failure detection and in-situ recovering from failures in
+        real-world conditions.
+      </p>  
+      <p className={styles.paragraph}>
+        In practice, most robotic systems handle failures implicitly—through error rejection,
+        human intervention, or safe shutdown—rather than explicitly diagnosing root causes
+        and planning intelligent recovery. We bring together researchers/practitioners working
+        across sub-communities, including SLAM, multimodal perception, fault detection and
+        diagnosis, resilient planning and mobility, learning-based failure prediction,
+        human–robot interaction, and safety-critical autonomy towards the common challenge
+        of failure detection and recovery. This workshop aims to create a platform for
+        cross-pollination between academic groups, governmental organisations, and industry
+        teams deploying robots in challenging environments.        
+      </p> 
+      <p className={styles.paragraph}>
+        The intended audience includes PhD students, early-career and industry
+        researchers/engineers developing and deploying robotic systems. Through invited talks,
+        technical presentations, posters, and structured round-table discussions, participants
+        will explore key questions: How can failures be detected before cascading? How can
+        robots adapt when sensing degrades? How should uncertainty and risk of failure be
+        quantified? What frameworks enable safe recovery and continuation? What roles do
+        foundation models play in explicit reasoning and recovery strategies for failures?        
+      </p>  
+      <p className={styles.paragraph}>  
+        By uniting diverse perspectives, we intend to outline a roadmap for next-gen resilient
+        autonomy, accelerating progress toward robots that can not only operate but thrive in
+        the real world.
+      </p>
+
 
         
       </p>
-      <div className={homeStyles.textContainer}>
+      {/* <div className={homeStyles.textContainer}>
         <ul className={homeStyles.dotPoints}>
           <li>
             How do we detect failures before they cascade?
@@ -38,7 +70,7 @@ const About: React.FC = () => {
           </li>
         </ul>
       </div>
-      By uniting diverse perspectives, the workshop intends to outline a roadmap for next-generation resilient autonomy, accelerating progress toward robots that can not only operate, but thrive, in challenging real-world environments.
+      By uniting diverse perspectives, the workshop intends to outline a roadmap for next-generation resilient autonomy, accelerating progress toward robots that can not only operate, but thrive, in challenging real-world environments. */}
       {/* <ContentBlock
         imageSrc="/HOTFormerLoc/assets/architecture/architecture_hotformerloc.png"
         altText="HOTFormerLoc Architecture"
@@ -191,6 +223,19 @@ const Contact: React.FC = () => {
   );
 };
 
+const KeynoteSpeaker: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <h2 id="KeynoteSpeaker" className={styles.sectionHeading}>
+        Keynote Speaker
+      </h2>
+      {/* <p className={styles.paragraph}>
+        <b>2025 Mar:</b> CS-Wild-Places dataset released.
+      </p> */}
+    </section>
+  );
+};
+
 const Organisers: React.FC = () => {
   return (
     <section className={styles.section}>
@@ -225,6 +270,7 @@ const Home = () => {
         <Links />
         <About />
         {/* <Visualise /> */}
+        <KeynoteSpeaker />
         <Organisers />
         <Contact />
         {/* <Updates /> */}

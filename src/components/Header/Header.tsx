@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        Failure Recovery in Field Robotics
+        Failure Is Not the End: Towards Open-World Failure Recovery for Robots
       </h1>
       <h4 className={styles.subtitle}>
       Workshop RSS 2026-June XXX (xxxam/pm-xxxam/pm in Sydney, Australia)
