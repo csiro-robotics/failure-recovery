@@ -103,14 +103,15 @@ const Contact: React.FC = () => {
 
 const BASE = import.meta.env.BASE_URL;
 const keynoteSpeakers = [
-  { name: "David Hsu", image: `${BASE}speakers/David_Hsu.jpeg` },
-  { name: "Fabio Ramos", image: `${BASE}speakers/Fabio_Ramos.jpeg` },
-  { name: "Abhinav Valada", image: `${BASE}speakers/Abhinav_Valada.jpeg` },
-  { name: "Stefan Luetenegger", image: `${BASE}speakers/Stefan_Leutenegger.jpeg` },
-  { name: "Marco Pavone", image: `${BASE}speakers/Marco_Pavone.jpeg` },
-  { name: "Will Madern", image: `${BASE}speakers/Will_Maddern.jpeg` },
-  { name: "Micol Spitale", image: `${BASE}speakers/Micol_Spitale.jpeg` },
+  { name: "David Hsu", affiliation: "National University of Singapore", image: `${BASE}speakers/David_Hsu.jpeg` },
+  { name: "Fabio Ramos", affiliation: "University of Sydney, NVIDIA-USA", image: `${BASE}speakers/Fabio_Ramos.jpeg` },
+  { name: "Abhinav Valada", affiliation: "University of Freiburg", image: `${BASE}speakers/Abhinav_Valada.jpeg` },
+  { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan_Leutenegger.jpeg` },
+  { name: "Marco Pavone", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/Marco_Pavone.jpeg` },
+  { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg` },
+  { name: "Micol Spitale", affiliation: "Polytecnico di Milano", image: `${BASE}speakers/Micol_Spitale.jpeg` },
 ];
+
 
 const KeynoteSpeakers: React.FC = () => {
   return (
@@ -128,6 +129,8 @@ const KeynoteSpeakers: React.FC = () => {
           className={ks.photo}
         />
         <p className={ks.name}>{p.name}</p>
+        <p className={ks.affiliation}>{p.affiliation}</p>  {/* new line */}
+   
       </div>
     ))}
   </div>
@@ -136,14 +139,15 @@ const KeynoteSpeakers: React.FC = () => {
 };
 
 const organisers = [
-  { name: "Milad Ramezani" },
-  { name: "Tirtha Bandyopadhyay" },
-  { name: "Kavindie Katuwandeniya" },
-  { name: "Fahira Afzal" },
-  { name: "Paulo Borges" },
-  { name: "Paulo Drews-Jr" },
-  { name: "Kristofer Kappel" },
+  { name: "Milad Ramezani",image: `${BASE}organizers/Milad.png` },
+  { name: "Tirtha Bandyopadhyay",image: `${BASE}organizers/Tirtha.png` },
+  { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
+  { name: "Fahira Afzal Maken",image: `${BASE}organizers/Fahira.png` },
+  { name: "Paulo Borges",image: `${BASE}organizers/Borges.png` },
+  { name: "Paulo Drews-Jr",image: `${BASE}organizers/Drews.png` },
+  { name: "Kristofer Kappel",image: `${BASE}organizers/Kristofer.png` },
 ];
+
 
 const getInitials = (name: string) =>
   name
@@ -164,7 +168,9 @@ const Organisers: React.FC = () => {
         {organisers.map((person) => (
           <div key={person.name} className={org.orgCard}>
             <div className={org.orgAvatar}>
-              {getInitials(person.name)}
+             
+              <img src={person.image} alt={person.name} className={org.orgPhoto} />
+
             </div>
             <p className={org.orgName}>{person.name}</p>
           </div>
