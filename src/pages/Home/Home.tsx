@@ -152,7 +152,7 @@ const organisers = [
 ];
 
 
-const getInitials = (name: string) =>
+const _getInitials = (name: string) =>
   name
     .split(" ")
     .filter(Boolean)
@@ -171,9 +171,8 @@ const Organisers: React.FC = () => {
         {organisers.map((person) => (
           <div key={person.name} className={org.orgCard}>
             <div className={org.orgAvatar}>
-             
-              <img src={person.image} alt={person.name} className={org.orgPhoto} />
-
+              {!person.image && <span className={org.orgInitials}>{_getInitials(person.name)}</span>}
+              {person.image && <img src={person.image} alt={person.name} className={org.orgPhoto} />}
             </div>
             <p className={org.orgName}>{person.name}</p>
           </div>
