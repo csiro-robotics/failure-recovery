@@ -8,12 +8,22 @@ const Header: React.FC = () => {
       <h1 className={styles.title}>
         Failure Is Not the End: Towards Open-World Failure Recovery for Robots
       </h1>
-      <h4 className={styles.subtitle}>
-      Workshop RSS 2026-July 17 (13:xx-17:xx in Sydney, Australia)
-      In person location: xxx, Techincal University of Sydney (UTS)
-      Video reccordings are available on our youtube channel: link (tbd)
-      </h4>
-      {/* <AuthorsBar authors={authors} /> */}
+
+      <p className={styles.meta}>
+        Workshop at RSS 2026
+      </p>
+
+      <p className={styles.meta}>
+        📅 July 17, 2026 &nbsp;|&nbsp; 🕒 13:00 – 17:00 (TBC)
+      </p>
+
+      <p className={styles.meta}>
+        📍 In-person: UTS (Sydney, Australia) — Room TBC
+      </p>
+
+      <p className={styles.meta}>
+        🎥 Recordings: <a href="#">YouTube (coming soon)</a>
+      </p>
     </header>
   );
 };
