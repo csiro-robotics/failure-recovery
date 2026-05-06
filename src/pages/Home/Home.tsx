@@ -186,16 +186,16 @@ const Organisers: React.FC = () => {
 };
 
 
-const Acknowledgements: React.FC = () => {
-  return (
-    <section className={styles.section}>
-      <h2 id="acknowledgements" className={styles.sectionHeading}>
-        Acknowledgements
-      </h2>
-      <p className={styles.paragraph}>Special thanks</p>
-    </section>
-  );
-};
+// const Acknowledgements: React.FC = () => {
+//   return (
+//     <section className={styles.section}>
+//       <h2 id="acknowledgements" className={styles.sectionHeading}>
+//         Acknowledgements
+//       </h2>
+//       <p className={styles.paragraph}>Special thanks</p>
+//     </section>
+//   );
+// };
 const CallForPapers: React.FC = () => {
   return (
     <section className={styles.section}>
