@@ -94,8 +94,10 @@ const Contact: React.FC = () => {
         Contact Us
       </h2>
       <p className={styles.paragraph}>
-        Reach out to tbd for any enquiries{" "}
-        <a href="mailto:tbd@data61.csiro.au">tbd@data61.csiro.au</a>.
+        Reach out to us for any enquiries{" "}
+        <a href="rss-2026-failure-recovery-workshop@googlegroups.com" target="_blank" rel="noopener noreferrer">
+          rss-2026-failure-recovery-workshop@googlegroups.com
+        </a>
       </p>
     </section>
   );
@@ -145,8 +147,8 @@ const KeynoteSpeakers: React.FC = () => {
 const organisers = [
   { name: "Milad Ramezani",image: `${BASE}organizers/Milad.png` },
   { name: "Tirtha Bandyopadhyay",image: `${BASE}organizers/Tirtha.png` },
-  { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
   { name: "Fahira Afzal Maken",image: `${BASE}organizers/Fahira.png` },
+  { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
   { name: "Paulo Borges",image: `${BASE}organizers/Paulo.png` },
   { name: "Paulo Drews-Jr",image: `${BASE}organizers/Drews.png` },
   { name: "Kristofer Kappel",image: `${BASE}organizers/kappel.png` },
@@ -244,7 +246,7 @@ const Home: React.FC = () => {
         <KeynoteSpeakers />
         <Organisers />
         <Contact />
-        <Acknowledgements />
+        {/* <Acknowledgements /> */}
       </main>
     </div>
   );

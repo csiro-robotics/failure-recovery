@@ -47,7 +47,7 @@ const NavigationBar: FC<NavigationBarProps> = memo(({ navigationItems }) => {
   return (
     <Navbar
       style={{
-        backgroundColor: "#004d1a"
+        backgroundColor: "#003366"
       }}
       variant="dark"
       expand="lg"
@@ -55,12 +55,12 @@ const NavigationBar: FC<NavigationBarProps> = memo(({ navigationItems }) => {
     >
       <Container>
         <Navbar.Brand as={HashLink} to="/" smooth>
-          {/*failure-recovery*/}
+          {/* failure-recovery */}
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="mx-auto">
             {navigationItems.map((item) =>
               item.children && item.children.length > 0 ? (
                 <HoverNavDropdown item={item} key={item.label} />
