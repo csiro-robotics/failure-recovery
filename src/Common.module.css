@@ -4,7 +4,20 @@
 *::after {
   box-sizing: border-box;
 }
+.logoRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 
+.rssLogo {
+  height: 103px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
 /* Container & Main Styles */
 .container {
   padding: 1rem;

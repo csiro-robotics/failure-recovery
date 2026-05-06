@@ -194,6 +194,44 @@ const Acknowledgements: React.FC = () => {
     </section>
   );
 };
+const CallForPapers: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <h2 id="call-for-papers" className={styles.sectionHeading}>
+        Call for Papers
+      </h2>
+
+      <p className={styles.paragraph}>
+        We invite extended abstracts (up to 3 pages excluding references,
+        acknowledgments, limitations, and appendix) formatted in the RSS template
+        and submitted via OpenReview.
+      </p>
+
+      <p className={styles.paragraph}>
+        Submissions should present original, unpublished work and address the
+        workshop themes on failure detection, recovery, and resilient autonomy.
+      </p>
+
+      <h3 className={styles.subHeading}>Discussion Topics</h3>
+
+      <p className={styles.paragraph}>
+        Topics include, but are not limited to:
+      </p>
+
+      <ul className={styles.list}>
+        <li>Characterising Failure in Field Robotics</li>
+        <li>Robustness Under Environmental and Sensor Degradation</li>
+        <li>Failure Detection, Prediction, and Early Warning</li>
+        <li>Recovery Mechanisms and Behavioural Adaptation</li>
+        <li>Evaluation, Benchmarking, and Real-World Deployment</li>
+        <li>Human-Assisted Failure Detection and Recovery</li>
+        <li>
+          Enabling Failure Detection, Analysis and Recovery using Foundation Models
+        </li>
+      </ul>
+    </section>
+  );
+};
 
 const Home: React.FC = () => {
   return (
@@ -202,6 +240,7 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         {/* <Links /> */}
         <About />
+        <CallForPapers />
         <KeynoteSpeakers />
         <Organisers />
         <Contact />

@@ -1,30 +1,39 @@
 import React from "react";
 import styles from "../../Common.module.css";
-// import AuthorsBar from "../AuthorsBar/AuthorsBar";
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
+      <div className={styles.logoRow}>
+      <img src="rss_logo.png" alt="RSS Logo" className={styles.rssLogo} />
+    </div>
+
+      {/* Main Title */}
       <h1 className={styles.title}>
-        Failure Is Not the End: Towards Open-World Failure Recovery for Robots
+        Failure Is Not the End
       </h1>
 
-      <p className={styles.meta}>
-        Workshop at RSS 2026
-      </p>
+      {/* Subtitle */}
+      <h2 className={styles.subtitle}>
+        Toward Open-World Failure Recovery for Robots
+      </h2>
+
+      
 
       <p className={styles.meta}>
-        📅 July 17, 2026 &nbsp;|&nbsp; 🕒 13:00 – 17:00 (TBC)
+        Sydney, Australia | July 17th, 2026
       </p>
 
-      <p className={styles.meta}>
-        📍 In-person: UTS (Sydney, Australia) — Room TBC
+      {/* Optional extra details (keep minimal) */}
+      <p className={styles.metaSmall}>
+        13:00 – 17:00 (TBC) · UTS (Room TBC)
       </p>
 
-      <p className={styles.meta}>
+      <p className={styles.metaSmall}>
         🎥 Recordings: <a href="#">YouTube (coming soon)</a>
       </p>
     </header>
   );
 };
+
 export default Header;
