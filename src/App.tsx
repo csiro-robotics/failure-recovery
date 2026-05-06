@@ -14,6 +14,7 @@ const navigationItems: NavigationItem[] = [
     path: "/",
     children: [
       { label: "About", path: "/#about" },
+      { label: "Call for Papers", path: "/#call-for-papers" },
       { label: "Invited Speakers", path: "/#keynote-speakers" },
       { label: "Schedule", path: "/#schedule" },
       { label: "Best Paper Award", path: "/#best-paper-award" },
