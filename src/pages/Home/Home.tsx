@@ -95,7 +95,8 @@ const Contact: React.FC = () => {
       </h2>
       <p className={styles.paragraph}>
         Reach out to us for any enquiries{" "}
-        <a href="rss-2026-failure-recovery-workshop@googlegroups.com" target="_blank" rel="noopener noreferrer">
+        
+        <a href="mailto:rss-2026-failure-recovery-workshop@googlegroups.com">
           rss-2026-failure-recovery-workshop@googlegroups.com
         </a>
       </p>
