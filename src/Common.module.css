@@ -9,14 +9,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0 10px; 
 }
 
+/* Responsive RSS Logo */
 .rssLogo {
-  height: 103px;
-  width: auto;
+  max-width: 250px;   /* Maximum size on large screens */
+  width: 100%;        /* Shrink if container is smaller */
+  height: auto;       /* Maintain aspect ratio */
   display: block;
   margin: 0 auto;
+  transition: max-width 0.3s ease; /* Smooth scaling on resize */
 }
 /* Container & Main Styles */
 .container {
@@ -188,6 +192,25 @@ button:hover {
     padding: 10px;
     box-shadow: none;
   }
+ 
+  /* Media queries for smaller screens */
+@media (max-width: 1024px) {
+  .rssLogo {
+    max-width: 200px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .rssLogo {
+    max-width: 150px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .rssLogo {
+    max-width: 120px; 
+  }
+}
 
   .title {
     font-size: 1.5rem;
