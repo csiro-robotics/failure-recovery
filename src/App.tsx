@@ -7,6 +7,7 @@ import DefaultPage from "./pages/DefaultPage";
 // import DatasetPage from "./pages/Dataset";
 // import DownloadPage from "./pages/Download";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
+import CallForPapersPage from "./pages/CallForPapers";
 
 const navigationItems: NavigationItem[] = [
   {
@@ -37,6 +38,10 @@ const navigationItems: NavigationItem[] = [
     label: "Organisers",
     path: "/#organisers",
   },
+  {
+    label: "Call for Papers",
+    path: "/call-for-papers",
+  },
 ];
 
 function App() {
@@ -46,6 +51,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<DefaultPage/>} />
+          <Route path="/call-for-papers" element={<CallForPapersPage/>} />
           {/* <Route path="/paper" element={<PaperPage/>} /> */}
           {/* <Route path="/dataset" element={<DatasetPage/>} /> */}
           {/* <Route path="/download" element={<DownloadPage/>} /> */}

@@ -4,7 +4,7 @@ import org from "./Organisers.module.css";
 import ks from "./KeynoteSpeakers.module.css";
 // import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
-
+import { Link } from "react-router-dom";
 const About: React.FC = () => {
   return (
     <section className={styles.section}>
@@ -196,30 +196,17 @@ const Organisers: React.FC = () => {
 //     </section>
 //   );
 // };
-const CallForPapers: React.FC = () => {
+const DiscussionTopics: React.FC = () => {
   return (
     <section className={styles.section}>
-      <h2 id="call-for-papers" className={styles.sectionHeading}>
-        Call for Papers
+      <h2 id="discussion-topics" className={styles.sectionHeading}>
+        Discussion Topics
       </h2>
 
       <p className={styles.paragraph}>
-        We invite contributions on failure detection, understanding,
-        and recovery in real-world robotics. As robots are increasingly deployed
-        in unstructured and safety-critical environments, robustness and resilience
-        to failure become fundamental challenges. This workshop aims to bring together
-        researchers and practitioners to explore methods that enable robots to
-        detect, reason about, and recover from failures in the wild.
-      </p>
-
-      <p className={styles.paragraph}>
-        We encourage submissions that introduce new research directions or ideas that invite discussion and provoke thoughtful reflection within the community.
-      </p>
-
-      <h3 className={styles.subHeading}>Discussion Topics</h3>
-
-      <p className={styles.paragraph}>
-        Topics include, but are not limited to:
+        The workshop focuses on resilient autonomy and failure recovery
+        in field robotics, spanning perception, planning, learning,
+        and human-robot interaction.
       </p>
 
       <ul className={styles.list}>
@@ -232,45 +219,22 @@ const CallForPapers: React.FC = () => {
         <li>Foundation Models for Failure Detection and Recovery</li>
       </ul>
 
-      {/* <h3 className={styles.subHeading}>Key Research Questions</h3>
-
-      { 
-      <ul className={styles.list}>
-        <li>How can failures be detected before cascading?</li>
-        <li>How can robots adapt when sensing degrades?</li>
-        <li>How should uncertainty and risk of failure be quantified?</li>
-        <li>What frameworks enable safe recovery and continued operation?</li>
-        <li>What role do foundation models play in reasoning and recovery?</li>
-      </ul> 
-      */}
-
-      <h3 className={styles.subHeading}>Submission Instructions</h3>
-
-      <ul className={styles.list}>
-        <li>Paper length: Up to 4 pages (excluding references and appendix)</li>
-        <li>Format: RSS paper template</li>
-        <li>Submission platform: OpenReview </li>
-        <li>Supplementary material: Videos and demos are encouraged</li>
-      </ul>
+    </section>
+  );
+};
+const CallForPapers: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <h2 id="call-for-papers" className={styles.sectionHeading}>
+        Call for Papers
+      </h2>
 
       <p className={styles.paragraph}>
-        
-         Accepted papers will be presented as posters, with selected works featured as spotlight talks.
-          Best Paper and Poster Awards will recognise outstanding contributions, particularly from early-career researchers.
-      </p>
-
-      <h3 className={styles.subHeading}>Important Dates</h3>
-
-      <ul className={styles.list}>
-        <li>Submission deadline: June 5, 2026</li>
-        <li>Notification: June 15, 2026</li>
-        <li>Camera-ready deadline: July 10, 2026</li>
-        <li>Workshop date: July 17, 2026</li>
-      </ul>
-
-      <p className={styles.paragraph}>
-        Join us at RSS 2026 to explore how robots can detect, adapt to,
-        and recover from failures in real-world environments.
+        Interested in contributing to the workshop? View the full{" "}
+        <Link to="/call-for-papers">
+          Call for Papers
+        </Link>{" "}
+        for submission guidelines and important dates.
       </p>
     </section>
   );
@@ -283,6 +247,7 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         {/* <Links /> */}
         <About />
+        <DiscussionTopics />
         <CallForPapers />
         <KeynoteSpeakers />
         <Organisers />
