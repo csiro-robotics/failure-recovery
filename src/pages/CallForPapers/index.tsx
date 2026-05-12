@@ -55,16 +55,16 @@ const CallForPapersPage: React.FC = () => {
             <li>Paper length: Up to 4 pages (excluding references and appendix)</li>
             <li>Format: RSS paper template</li>
             <li>
-              Submission platform:{" "}
+              Submission Portal:{" "}
               <a
-                href="https://openreview.net/"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScFPSOqZPHKhKpLxMWd-gb2PcUcsEx83PhgQRpasgmtx_GbaA/viewform?usp=sharing&ouid=109899858245832244605"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                OpenReview
+                Online submission form
               </a>
             </li>
-            <li>Supplementary material: Videos and demos are encouraged</li>
+            <li>Supplementary Material: Videos and demos are encouraged</li>
           </ul>
 
           <p className={styles.paragraph}>
