@@ -152,7 +152,7 @@ const organisers = [
   { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
   { name: "Paulo Borges",image: `${BASE}organizers/Paulo.png` },
   { name: "Paulo Drews-Jr",image: `${BASE}organizers/Drews.png` },
-  { name: "Kristofer Kappel",image: `${BASE}organizers/kappel.png` },
+  { name: "Kristofer Kappel",image: `${BASE}organizers/Kappel.jpg` },
 ];
 
 
