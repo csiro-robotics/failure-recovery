@@ -111,9 +111,9 @@ const keynoteSpeakers = [
   { name: "Abhinav Valada", affiliation: "University of Freiburg", image: `${BASE}speakers/Abhinav_Valada.jpeg`,url:"https://rl.uni-freiburg.de/people/valada" },
   { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://scholar.google.com/citations?user=SmGQ48gAAAAJ&hl=en" },
 
-  { name: "Marco Pavone", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/Marco.png`,url:"https://web.stanford.edu/~pavone/index.html" },
-  { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg` },
-  { name: "Micol Spitale", affiliation: "Polytecnico di Milano", image: `${BASE}speakers/Micol.png`,url:"https://spitale.faculty.polimi.it/" },
+  { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`},
+  { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg` }
+  // { name: "Micol Spitale", affiliation: "Polytecnico di Milano", image: `${BASE}speakers/Micol.png`,url:"https://spitale.faculty.polimi.it/" },
 ];
 
 
@@ -152,7 +152,7 @@ const organisers = [
   { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
   { name: "Paulo Borges",image: `${BASE}organizers/Paulo.png` },
   { name: "Paulo Drews-Jr",image: `${BASE}organizers/Drews.png` },
-  { name: "Kristofer Kappel",image: `${BASE}organizers/Kappel.jpg` },
+  { name: "Kristofer Kappel",image: `${BASE}organizers/Kris.png` },
 ];
 
 
