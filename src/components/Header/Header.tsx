@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       </p>
 
       <p className={styles.metaSmall}>
-        13:00 – 17:00 (TBC) · UTS (Room TBC)
+        14:00 – 18:00  · UTS (Room TBC)
       </p>
 
       <p className={styles.metaSmall}>
