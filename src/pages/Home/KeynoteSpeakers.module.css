@@ -3,10 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .card {
-  flex: 0 0 150px;
+  flex: 0 0 140px;
   text-align: center;
 }
 
@@ -43,5 +46,11 @@
 @media (max-width: 500px) {
   .card {
     flex: 0 0 100%;
+  }
+}
+/* desktop */
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 0 calc(25% - 2rem);
   }
 }
