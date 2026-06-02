@@ -53,7 +53,16 @@ const CallForPapersPage: React.FC = () => {
 
           <ul className={styles.list}>
             <li>Paper length: Up to 4 pages (excluding references and appendix)</li>
-            <li>Format: RSS paper template</li>
+            <li>
+                Format:{" "}
+                <a
+                  href="https://roboticsconference.org/information/cfp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  RSS paper template
+                </a>
+              </li>
             <li>
               Submission Portal:{" "}
               <a
