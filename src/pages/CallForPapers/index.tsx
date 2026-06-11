@@ -86,8 +86,8 @@ const CallForPapersPage: React.FC = () => {
           <h3 className={styles.subHeading}>Important Dates</h3>
 
           <ul className={styles.list}>
-            <li>Submission deadline: June 10, 2026</li>
-            <li>Notification: June 15, 2026</li>
+            <li>Submission deadline: June 12, 2026</li>
+            <li>Notification: June 18, 2026</li>
             <li>Camera-ready deadline: July 10, 2026</li>
             <li>Workshop date: July 17, 2026</li>
           </ul>
