@@ -80,7 +80,7 @@ const Schedule: React.FC = () => {
             <tr>
               <td>5:00 – 5:20 PM</td>
               <td>KS7: Robot Decision-Making in Complex Settings</td>
-              <td>Abhinav Vlada</td>
+              <td>Abhinav Valada</td>
             </tr>
 
             <tr>
