@@ -216,3 +216,55 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+paperList {
+  margin-top: 10px;
+}
+
+.paperItem {
+  margin-bottom: 24px;  /* space between papers */
+  padding-bottom: 0;    /* no extra padding */
+  
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+.tableWrapper {
+  overflow-x: auto;
+}
+.scheduleTable td:first-child,
+.scheduleTable th:first-child {
+  white-space: nowrap;
+}
+.scheduleTable td:last-child,
+.scheduleTable th:last-child {
+  white-space: nowrap;
+}
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #e5e5e5;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.scheduleTable th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #000;
+}
+
+.scheduleTable tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.scheduleTable tr:hover {
+  background-color: #f0f8ff;
+}

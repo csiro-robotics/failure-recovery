@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import DefaultPage from "./pages/DefaultPage";
-// import PaperPage from "./pages/Paper";
 // import DatasetPage from "./pages/Dataset";
 // import DownloadPage from "./pages/Download";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import CallForPapersPage from "./pages/CallForPapers";
+import PaperPage from "./pages/Paper";
 
 const navigationItems: NavigationItem[] = [
   {
@@ -32,7 +32,7 @@ const navigationItems: NavigationItem[] = [
   },
   {
     label: "Papers",
-    path: "/#papers",
+    path: "/papers",
   },
   {
     label: "Organisers",
@@ -52,7 +52,7 @@ function App() {
         <Routes>
           <Route path="/" element={<DefaultPage/>} />
           <Route path="/call-for-papers" element={<CallForPapersPage/>} />
-          {/* <Route path="/paper" element={<PaperPage/>} /> */}
+          <Route path="/papers" element={<PaperPage/>} />
           {/* <Route path="/dataset" element={<DatasetPage/>} /> */}
           {/* <Route path="/download" element={<DownloadPage/>} /> */}
         </Routes>
