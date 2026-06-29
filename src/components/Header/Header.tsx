@@ -1,14 +1,11 @@
 import React from "react";
 import styles from "../../Common.module.css";
-import logo from "../../rss_logo.png";
+
 
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logoRow}>
-        <img src={logo} alt="RSS Logo" className={styles.rssLogo} />
-      </div>
-
+      
       <h1 className={styles.title}>
         Failure Is Not the End
       </h1>

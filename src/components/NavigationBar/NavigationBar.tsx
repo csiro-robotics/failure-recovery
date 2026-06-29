@@ -1,3 +1,4 @@
+import logo from "../../rss_logo.png";
 import { FC, useState, MouseEvent, memo, useCallback } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +56,14 @@ const NavigationBar: FC<NavigationBarProps> = memo(({ navigationItems }) => {
     >
       <Container>
         <Navbar.Brand as={HashLink} to="/" smooth>
-          {/* failure-recovery */}
+          <img
+            src={logo}
+            alt="RSS 2026"
+            style={{
+              height: "42px",
+              width: "auto",
+            }}
+          />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" />
