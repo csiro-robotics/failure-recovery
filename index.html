@@ -8,7 +8,20 @@
     <script type="module" crossorigin src="/failure-recovery/assets/index-BkOPhNFz.js"></script>
     <link rel="stylesheet" crossorigin href="/failure-recovery/assets/index-grr1XeWw.css">
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- ✅ ADD THIS -->
+    <script>
+      (function () {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
   </body>
 </html>
