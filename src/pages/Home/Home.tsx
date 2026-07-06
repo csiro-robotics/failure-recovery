@@ -248,13 +248,13 @@ const KeynoteSpeakers: React.FC = () => {
 };
 
 const organisers = [
-  { name: "Milad Ramezani",image: `${BASE}organizers/Milad.png` },
-  { name: "Tirtha Bandyopadhyay",image: `${BASE}organizers/Tirtha.png` },
-  { name: "Fahira Afzal Maken",image: `${BASE}organizers/Fahira.png` },
-  { name: "Kavindie Katuwandeniya",image: `${BASE}organizers/Kavi.png` },
-  { name: "Paulo Borges",image: `${BASE}organizers/Paulo.png` },
-  { name: "Paulo Drews-Jr",image: `${BASE}organizers/Drews.png` },
-  { name: "Kristofer Kappel",image: `${BASE}organizers/Kris.png` },
+  { name: "Milad Ramezani",affiliation: "CSIRO",image: `${BASE}organizers/Milad.png` },
+  { name: "Tirtha Bandyopadhyay",affiliation: "CSIRO",image: `${BASE}organizers/Tirtha.png` },
+  { name: "Fahira Afzal Maken",affiliation: "CSIRO",image: `${BASE}organizers/Fahira.png` },
+  { name: "Kavindie Katuwandeniya",affiliation: "CSIRO",image: `${BASE}organizers/Kavi.png` },
+  { name: "Paulo Borges",  affiliation: "Orica",image: `${BASE}organizers/Paulo.png` },
+  { name: "Paulo Drews-Jr",affiliation: "Federal University of Rio Grande",image: `${BASE}organizers/Drews.png` },
+  { name: "Kristofer Kappel",affiliation: "Federal University of Rio Grande",image: `${BASE}organizers/Kris.png` },
 ];
 
 
@@ -281,6 +281,7 @@ const Organisers: React.FC = () => {
               {person.image && <img src={person.image} alt={person.name} className={org.orgPhoto} />}
             </div>
             <p className={org.orgName}>{person.name}</p>
+            <p className={org.orgAffiliation}>{person.affiliation}</p>
           </div>
         ))}
       </div>
