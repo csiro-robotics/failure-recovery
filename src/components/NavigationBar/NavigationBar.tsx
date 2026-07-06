@@ -1,4 +1,7 @@
 import logo from "../../rss_logo.png";
+import csiroLogo from "../../csiro_logo.png";
+import furgLogo from "../../furg_logo.png";
+import oricaLogo from "../../orica_logo.png";
 import { FC, useState, MouseEvent, memo, useCallback } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -54,33 +57,78 @@ const NavigationBar: FC<NavigationBarProps> = memo(({ navigationItems }) => {
       expand="lg"
       sticky="top"
     >
-      <Container>
-        <Navbar.Brand as={HashLink} to="/" smooth>
-          <img
-            src={logo}
-            alt="RSS 2026"
-            style={{
-              height: "42px",
-              width: "auto",
-            }}
-          />
-        </Navbar.Brand>
+     <Container>
+  {/* Left logo */}
+  <Navbar.Brand as={HashLink} to="/" smooth>
+    <img
+      src={logo}
+      alt="RSS 2026"
+      style={{
+        height: "42px",
+        width: "auto",
+      }}
+    />
+  </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbar-nav" />
-        <Navbar.Collapse id="navbar-nav">
-          <Nav className="mx-auto">
-            {navigationItems.map((item) =>
-              item.children && item.children.length > 0 ? (
-                <HoverNavDropdown item={item} key={item.label} />
-              ) : (
-                <Nav.Link as={HashLink} smooth to={item.path} key={item.label}>
-                  {item.label}
-                </Nav.Link>
-              )
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
+  <Navbar.Toggle aria-controls="navbar-nav" />
+
+  <Navbar.Collapse id="navbar-nav">
+    <Nav className="mx-auto">
+      {navigationItems.map((item) =>
+        item.children && item.children.length > 0 ? (
+          <HoverNavDropdown item={item} key={item.label} />
+        ) : (
+          <Nav.Link as={HashLink} smooth to={item.path} key={item.label}>
+            {item.label}
+          </Nav.Link>
+        )
+      )}
+    </Nav>
+
+    {/* Right logo */}
+    {/* Right logos */}
+<div
+  className="ms-auto d-flex align-items-center"
+  style={{ gap: "16px" }}
+>
+  <a
+    href="https://www.csiro.au"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src={csiroLogo}
+      alt="CSIRO"
+      style={{ height: "36px", width: "auto" }}
+    />
+  </a>
+
+  <a
+    href="https://www.furg.br/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src={furgLogo}
+      alt="FURG"
+      style={{ height: "36px", width: "auto" }}
+    />
+  </a>
+
+  <a
+    href="https://www.orica.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src={oricaLogo}
+      alt="Orica"
+      style={{ height: "36px", width: "auto" }}
+    />
+  </a>
+</div>
+  </Navbar.Collapse>
+</Container>
     </Navbar>
   );
 }, (prevProps, nextProps) => prevProps.navigationItems === nextProps.navigationItems);
