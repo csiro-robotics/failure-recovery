@@ -8,6 +8,7 @@ import DefaultPage from "./pages/DefaultPage";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import CallForPapersPage from "./pages/CallForPapers";
 import PaperPage from "./pages/Paper";
+import SchedulePage from "./pages/Schedule";
 
 const navigationItems: NavigationItem[] = [
   {
@@ -24,24 +25,23 @@ const navigationItems: NavigationItem[] = [
   },
   {
     label: "Schedule",
-    path: "/#schedule",
-  },
-  {
-    label: "Best Paper Award",
-    path: "/#best-paper-award",
-  },
-  {
-    label: "Papers",
-    path: "/papers",
-  },
-  {
-    label: "Organisers",
-    path: "/#organisers",
+    path: "/schedule",
   },
   {
     label: "Call for Papers",
     path: "/call-for-papers",
   },
+  
+  {
+    label: "Accepted Papers",
+    path: "/papers",
+  },
+  
+  {
+    label: "Organisers",
+    path: "/#organisers",
+  },
+  
 ];
 
 function App() {
@@ -51,6 +51,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<DefaultPage/>} />
+          <Route path="/schedule" element={<SchedulePage />} />
           <Route path="/call-for-papers" element={<CallForPapersPage/>} />
           <Route path="/papers" element={<PaperPage/>} />
           {/* <Route path="/dataset" element={<DatasetPage/>} /> */}
