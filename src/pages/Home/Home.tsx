@@ -4,7 +4,7 @@ import org from "./Organisers.module.css";
 import ks from "./KeynoteSpeakers.module.css";
 // import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -227,7 +227,7 @@ const DiscussionTopics: React.FC = () => {
     </section>
   );
 };
-const CallForPapers: React.FC = () => {
+/* const CallForPapers: React.FC = () => {
   return (
     <section className={styles.section}>
       <h2 id="call-for-papers" className={styles.sectionHeading}>
@@ -275,7 +275,7 @@ const ScheduleLink: React.FC = () => {
       </p>
     </section>
   );
-};
+}; */
 const Home: React.FC = () => {
   return (
     <div className={styles.container}>
@@ -285,9 +285,9 @@ const Home: React.FC = () => {
         <About />
         <DiscussionTopics />
         <KeynoteSpeakers />
-        <ScheduleLink />
-        <CallForPapers />
-        <AcceptedPapers />
+        {/* <ScheduleLink /> */}
+        {/* <CallForPapers /> */}
+        {/*<AcceptedPapers />*/}
         <Organisers />
         <Contact />
         {/* <Acknowledgements /> */}
