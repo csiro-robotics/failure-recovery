@@ -256,18 +256,17 @@ paperList {
 }
 
 .scheduleTable th {
-  background-color: #e0e0e0;  /* slightly darker than rows */
+  background-color: #dfe5eb;  /* soft cool silver grey */
   font-weight: 600;
-  color: #000;
+  color: #111;
 }
 
 .scheduleTable tr:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #f7f9fb;  /* subtle cool grey rows */
 }
 
-
 .scheduleTable tr:hover {
-  background-color: #e6e6e6;
+  background-color: #f1f5f8;
 }
 .scheduleTable td:last-child,
 .scheduleTable th:last-child {
