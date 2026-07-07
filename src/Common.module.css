@@ -286,3 +286,11 @@ paperList {
   display: block;
 
 }
+.noticeBox {
+  width: 100%;
+  background: #f7f9fc;
+  border-left: 4px solid #4f6fa5;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}

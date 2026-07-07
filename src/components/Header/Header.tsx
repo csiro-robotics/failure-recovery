@@ -14,16 +14,23 @@ const Header: React.FC = () => {
         Toward Open-World Failure Recovery for Robots
       </h2>
 
-      <p className={styles.meta}>
-        Sydney, Australia | July 17th, 2026
-      </p>
+   <p className={styles.meta}>
+      Sydney, Australia
+    </p>
+
+    <p className={styles.metaSmall}>
+      July 17, 2026 | 14:00–18:00
+    </p>
+
+    <p className={styles.metaSmall}>
+      UTS CB11.00.401 (Building 11, Level 00, Room 401)
+    </p>
+
+
 
       <p className={styles.metaSmall}>
-        14:00 – 18:00  · UTS (Room TBC)
-      </p>
-
-      <p className={styles.metaSmall}>
-        🎥 Recordings: <a href="#">YouTube (coming soon)</a>
+        {/* 🎥 Recordings: <a href="#">YouTube (coming soon)</a> */}
+        Recordings: <a href="#">YouTube (Available after the workshop.)</a>
       </p>
     </header>
   );

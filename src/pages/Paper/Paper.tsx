@@ -7,7 +7,17 @@ const PaperPage: React.FC = () => {
       <main className={styles.main}>
         <section className={styles.section}>
           <h2 className={styles.sectionHeading}>Accepted Papers</h2>
-
+              <div className={styles.noticeBox}>
+                <h3 className={styles.subHeading}>Poster Presentation Instructions</h3>
+                <p>
+                  All accepted papers will be presented as posters during the workshop.
+                </p>
+                <ul className={styles.list}>
+                  <li><strong>Poster size:</strong> A0 </li>
+                  <li><strong>Orientation:</strong> Portrait</li>
+                  <li><strong>Mounting:</strong> Poster boards will be provided for mounting posters</li>
+                </ul>
+              </div>
           <div className={styles.paperList}>
             <div className={styles.paperItem}>
               <strong>
