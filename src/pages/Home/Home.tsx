@@ -244,11 +244,11 @@ const CallForPapers: React.FC = () => {
     </section>
   );
 };
-const Papers: React.FC = () => {
+const AcceptedPapers: React.FC = () => {
   return (
     <section className={styles.section}>
       <h2 id="papers" className={styles.sectionHeading}>
-        Papers
+        Accepted Papers
       </h2>
 
       <p className={styles.paragraph}>
@@ -287,7 +287,7 @@ const Home: React.FC = () => {
         <KeynoteSpeakers />
         <ScheduleLink />
         <CallForPapers />
-        <Papers />
+        <AcceptedPapers />
         <Organisers />
         <Contact />
         {/* <Acknowledgements /> */}
