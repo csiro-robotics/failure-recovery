@@ -15,10 +15,7 @@ const navigationItems: NavigationItem[] = [
     label: "Home",
     path: "/",
   },
-  {
-    label: "About",
-    path: "/#about",
-  },
+  
   {
     label: "Invited Speakers",
     path: "/#keynote-speakers",
