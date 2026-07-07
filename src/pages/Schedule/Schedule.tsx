@@ -37,7 +37,7 @@ const Schedule: React.FC = () => {
               <td>2:25 – 2:45 PM</td>
               <td><strong>Robustness, Failure, and Recovery in Real-World Mobile Robot Perception and Action</strong>
                <p className={styles.abstract}>
-                Despite rapid advances in the age of physical AI, robustness and task success rates in the real world remain a central bottleneck of robotics. This talk presents recent work on Spatial AI that leverage complementary sensing modalities and explicit uncertainty representations to improve robustness and accuracy in robot perception. Furthermore, it shows how incorporating dynamical models enables robots to detect failures and recover from them, illustrated through autonomous drone applications. Finally, it discusses recent advances in learning robot actions directly from observing humans. Since transferring human skills to robots inevitably leads to initial failures, these methods enable efficient adaptation to robot embodiments, environments, and tasks using only a small number of demonstrations—leveraging both successful and failed attempts. </p></td>
+                Despite rapid advances in the age of physical AI, robustness and task success rates in the real world remain a central bottleneck of robotics. This talk presents recent work on Spatial AI that leverages complementary sensing modalities and explicit uncertainty representations to improve robustness and accuracy in robot perception. Furthermore, it shows how incorporating dynamical models enables robots to detect failures and recover from them, illustrated through autonomous drone applications. Finally, it discusses recent advances in learning robot actions directly from observing humans. Since transferring human skills to robots inevitably leads to initial failures, these methods enable efficient adaptation to robot embodiments, environments, and tasks using only a small number of demonstrations—leveraging both successful and failed attempts. </p></td>
               <td>Stefan Leutenegger</td>
             </tr>
 
@@ -53,19 +53,23 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
 
             <tr>
               <td>3:05 – 3:30 PM</td>
-              <td>Talks from participants (spotlight/best papers)</td>
+              <td>Spotlight talks from selected accepted papers</td>
               <td>Participants/Authors</td>
             </tr>
 
             <tr>
               <td>3:30 – 4:00 PM</td>
-              <td>Coffee break with poster sessions</td>
+              <td>Coffee break and poster session</td>
               <td>Participants</td>
             </tr>
 
             <tr>
               <td>4:00 – 4:20 PM</td>
-              <td>KS4: Research Talk about Failure Reasoning using Foundation Models</td>
+              <td><strong>Embodied Reasoning for Out-of-Distribution Reliability in Autonomy</strong>
+                <p className={styles.abstract}>
+                    Autonomous systems are remarkably capable until the world stops looking like their training data. The rare, unstructured, out-of-distribution moment is where autonomy can earn (or lose) our trust. A tempting solution is to make robots "think harder" by forcing embodied foundation models to perform exhaustive chain-of-thought reasoning all the time. But in embodied systems, deliberation is not free: it costs time, compute, and sometimes safety itself. This talk argues that the real questions are what to reason about, how to reason under pressure, and when reasoning is worth its cost. It first shows that embodied foundation models can discover for themselves which forms of reasoning actually improve decision-making by pruning away the verbose, templated reasoning that was previously assumed to be necessary. It then demonstrates that reasoning can be structured to operate at the speed of safety, anticipating potential hazards and improvising fallback behaviors in real time. Finally, it presents how intelligence can be budgeted by allocating deep deliberation only to the moments that demand it. Across manipulation, legged locomotion, and self-driving, a common lesson emerges: embodied reasoning is a resource to be discovered, deployed, and budgeted, rather than a fixed template applied uniformly.
+                 </p>   
+              </td>
               <td>Milan Ganai</td>
             </tr>
 
@@ -80,7 +84,7 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
             </tr>
 
             <tr>
-              <td>4:40 – 5:00 PM</td>
+              <td>4:40 – 5:00 PM (online)</td>
               <td><strong>Errors and Mistakes in Human–Robot Interaction: Lessons from Robotic Mental Well-Being Coaches</strong>
                 <p className={styles.abstract}>
                     As robots become increasingly integrated into everyday life, understanding how they make and recover from errors is essential for building effective and trustworthy human–robot interactions. This talk explores the role of errors in HRI through a case study on robotic mental well-being coaches designed to support employees in the workplace, showing how robot mistakes can shape users' trust, engagement, and interaction outcomes. 
@@ -102,19 +106,19 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
 
             <tr>
               <td>5:20 – 5:25 PM</td>
-              <td>Short Break to make preparation for breakout session</td>
+              <td>Short break to prepare for the breakout session</td>
               <td>Organisation committee</td>
             </tr>
 
             <tr>
               <td>5:25 – 5:55 PM</td>
-              <td>Audience participation with key panel experts in a round chair format on open challenges linking existing techniques with failure modes</td>
+              <td>Panel discussion with invited speakers and audience on open challenges in failure detection, reasoning, and recovery</td>
               <td>Participants/Panelists</td>
             </tr>
 
             <tr>
               <td>5:55 – 6:00 PM</td>
-              <td>Conclusion/Follow-up: planning for position paper with the participants’ input</td>
+              <td>Closing remarks and discussion for a community position paper</td>
               <td>Organisation committee</td>
             </tr>
           </tbody>
