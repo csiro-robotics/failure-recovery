@@ -269,7 +269,14 @@ paperList {
 .scheduleTable tr:hover {
   background-color: #e6e6e6;
 }
-
+.scheduleTable td:last-child,
+.scheduleTable th:last-child {
+  text-align: center;
+}
+.scheduleTable td:first-child,
+.scheduleTable th:first-child {
+  text-align: center;
+}
 .abstract {
   font-size: 0.85rem;
   color: #555;

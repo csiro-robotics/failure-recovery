@@ -3,7 +3,9 @@ import styles from "../../Common.module.css";
 
 const Schedule: React.FC = () => {
   return (
-    <section className={styles.section}>
+  <div className={styles.container}>
+    <main className={styles.main}>
+      <section className={styles.section}>
       <h2 id="schedule" className={styles.sectionHeading}>
         Schedule
       </h2>
@@ -119,6 +121,9 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
         </table>
       </div>
     </section>
+    </main>
+  </div>
   );
 };
+
 export default Schedule;
