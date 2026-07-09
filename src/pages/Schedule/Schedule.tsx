@@ -55,7 +55,7 @@ const Schedule: React.FC = () => {
                <p className={styles.abstract}>
                 Despite rapid advances in the age of physical AI, robustness and task success rates in the real world remain a central bottleneck of robotics. This talk presents recent work on Spatial AI that leverages complementary sensing modalities and explicit uncertainty representations to improve robustness and accuracy in robot perception. Furthermore, it shows how incorporating dynamical models enables robots to detect failures and recover from them, illustrated through autonomous drone applications. Finally, it discusses recent advances in learning robot actions directly from observing humans. Since transferring human skills to robots inevitably leads to initial failures, these methods enable efficient adaptation to robot embodiments, environments, and tasks using only a small number of demonstrations—leveraging both successful and failed attempts. </p></td>
               <td><a 
-                    href="https://scholar.google.com/citations?user=SmGQ48gAAAAJ&hl=en"
+                    href="https://mrl.ethz.ch/the-group/people/lab-members/stefan-leutenegger.html"
                     target="_blank"
                     rel="noopener noreferrer">
                 
@@ -100,7 +100,7 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
                  </p>   
               </td>
               <td><a 
-                    href="https://scholar.google.com/citations?user=LCMIfaQAAAAJ&hl=en"
+                    href="https://milanganai.github.io/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

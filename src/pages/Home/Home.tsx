@@ -108,9 +108,9 @@ const Contact: React.FC = () => {
 const BASE = import.meta.env.BASE_URL;
 const keynoteSpeakers = [
   { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg`, url:"https://scholar.google.com/citations?user=eZrWRbMAAAAJ&hl=en" },
-  { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://scholar.google.com/citations?user=SmGQ48gAAAAJ&hl=en" },
+  { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://mrl.ethz.ch/the-group/people/lab-members/stefan-leutenegger.html" },
   { name: "Xuning Yang", affiliation: "NVIDIA-USA", image: `${BASE}speakers/xun.png`,url:"https://www.xuningyang.com/" },
-  { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`,url:"https://scholar.google.com/citations?user=LCMIfaQAAAAJ&hl=en"},
+  { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`,url:"https://milanganai.github.io/"},
   { name: "David Hsu", affiliation: "National University of Singapore", image: `${BASE}speakers/David_Hsu.jpeg`,url: "https://www.comp.nus.edu.sg/~dyhsu/" },
   //{ name: "Fabio Ramos", affiliation: "University of Sydney, NVIDIA-USA", image: `${BASE}speakers/Fabio_Ramos.jpeg`,url:"https://fabioramos.github.io/Home.html" },
   { name: "Micol Spitale", affiliation: "Polytecnico di Milano", image: `${BASE}speakers/Micol.png`,url:"https://spitale.faculty.polimi.it/" },
