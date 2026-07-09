@@ -110,7 +110,7 @@ const keynoteSpeakers = [
   { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg` },
   { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://scholar.google.com/citations?user=SmGQ48gAAAAJ&hl=en" },
   { name: "Xuning Yang", affiliation: "NVIDIA-USA", image: `${BASE}speakers/xun.png`,url:"https://www.xuningyang.com/" },
-  { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`},
+  { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`,url:"https://scholar.google.com/citations?user=LCMIfaQAAAAJ&hl=en"},
   { name: "David Hsu", affiliation: "National University of Singapore", image: `${BASE}speakers/David_Hsu.jpeg`,url: "https://www.comp.nus.edu.sg/~dyhsu/" },
   //{ name: "Fabio Ramos", affiliation: "University of Sydney, NVIDIA-USA", image: `${BASE}speakers/Fabio_Ramos.jpeg`,url:"https://fabioramos.github.io/Home.html" },
   { name: "Micol Spitale", affiliation: "Polytecnico di Milano", image: `${BASE}speakers/Micol.png`,url:"https://spitale.faculty.polimi.it/" },
@@ -129,7 +129,7 @@ const KeynoteSpeakers: React.FC = () => {
 
   <div className={ks.grid}>
     {keynoteSpeakers.map((p) => (
-      <div key={p.name} className={ks.card}>
+      <div key={p.name}   id={p.name.replace(/\s+/g, "-").toLowerCase()} className={ks.card}>
         <img
           src={p.image}
           alt={p.name}
