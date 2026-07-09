@@ -286,6 +286,24 @@ paperList {
   display: block;
 
 }
+
+.breakRow {
+  background-color: #f3f5f7 !important;
+  font-style: italic;
+  color: #555;
+}
+
+.breakRow td {
+  border-top: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cbd5e1;
+  padding: 14px 12px;
+}
+
+.breakRow td:nth-child(2) {
+  text-align: center;
+  font-weight: 600;
+}
+
 .noticeBox {
   width: 100%;
   background: #f7f9fc;
@@ -293,4 +311,9 @@ paperList {
   padding: 1rem 1.25rem;
   margin-bottom: 2rem;
   border-radius: 6px;
+}
+.onlineLabel {
+  color: #555;
+  font-size: 0.9em;
+  font-style: italic;
 }

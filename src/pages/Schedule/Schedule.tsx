@@ -15,7 +15,7 @@ const Schedule: React.FC = () => {
           <thead>
             <tr>
               <th>Time</th>
-              <th>Topic / Focus</th>
+              <th>Talk / Session</th>
               <th>Speaker</th>
             </tr>
           </thead>
@@ -29,7 +29,13 @@ const Schedule: React.FC = () => {
 
             <tr>
               <td>2:05 – 2:25 PM</td>
-              <td>KS1: Industry Talk about World Model Deployment Challenges</td>
+              <td><strong>Leveraging Generative World Models for Resilient Autonomy Evaluation</strong>
+                <p className={styles.abstract}>
+                    Evaluating autonomous vehicles at scale remains a defining challenge because real-world testing is costly, logistically constrained, and increasingly data-inefficient due to the rarity of safety-critical events.
+                     While traditional procedural or 3D-reconstruction simulators often trade visual realism for the ability to seamlessly handle dynamic actors and occlusions, large-scale generative world models offer a scalable alternative.
+                    This talk presents GAIA-3, evolving general world models from simple visual synthesis tools into rigorous safety evaluation engines. It shows how to evaluate AI driving models where the vehicle's choices dynamically guide the simulated future under real-world constraints, maintaining authentic interactions in counterfactual scenarios and enabling fault injection and challenging scenario testing. It also demonstrates how to generate cosimulated multisensor data, expanding the platform's utility to validate resilient autonomy applications well beyond vision-only driving.
+                    </p>
+              </td>
               <td>Will Madern</td>
             </tr>
 
@@ -56,12 +62,13 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
               <td>Spotlight talks from selected accepted papers</td>
               <td>Participants/Authors</td>
             </tr>
-
-            <tr>
-              <td>3:30 – 4:00 PM</td>
-              <td>Coffee break and poster session</td>
-              <td>Participants</td>
-            </tr>
+           <tr className={styles.breakRow}>
+        <td>3:30 – 4:00 PM</td>
+        <td>
+            ☕ Coffee break and poster session
+        </td>
+        <td>Participants</td>
+        </tr>
 
             <tr>
               <td>4:00 – 4:20 PM</td>
@@ -84,7 +91,11 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
             </tr>
 
             <tr>
-              <td>4:40 – 5:00 PM (online)</td>
+              <td>4:40 – 5:00 PM 
+                <span className={styles.onlineLabel}>
+                    <br />
+                    Online
+                </span></td>
               <td><strong>Errors and Mistakes in Human–Robot Interaction: Lessons from Robotic Mental Well-Being Coaches</strong>
                 <p className={styles.abstract}>
                     As robots become increasingly integrated into everyday life, understanding how they make and recover from errors is essential for building effective and trustworthy human–robot interactions. This talk explores the role of errors in HRI through a case study on robotic mental well-being coaches designed to support employees in the workplace, showing how robot mistakes can shape users' trust, engagement, and interaction outcomes. 
@@ -104,10 +115,10 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
               <td>Abhinav Valada</td>
             </tr>
 
-            <tr>
-              <td>5:20 – 5:25 PM</td>
-              <td>Short break to prepare for the breakout session</td>
-              <td>Organisation committee</td>
+            <tr className={styles.breakRow}>
+                <td>5:20 – 5:25 PM</td>
+                <td>Short break to prepare for the breakout session</td>
+                <td>Organisation committee</td>
             </tr>
 
             <tr>
