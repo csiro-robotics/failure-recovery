@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
 
 const BASE = import.meta.env.BASE_URL;
 const keynoteSpeakers = [
-  { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg` },
+  { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg`, url:"https://scholar.google.com/citations?user=eZrWRbMAAAAJ&hl=en" },
   { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://scholar.google.com/citations?user=SmGQ48gAAAAJ&hl=en" },
   { name: "Xuning Yang", affiliation: "NVIDIA-USA", image: `${BASE}speakers/xun.png`,url:"https://www.xuningyang.com/" },
   { name: "Milan Ganai", affiliation: "Stanford University, NVIDIA-USA", image: `${BASE}speakers/milan.png`,url:"https://scholar.google.com/citations?user=LCMIfaQAAAAJ&hl=en"},
