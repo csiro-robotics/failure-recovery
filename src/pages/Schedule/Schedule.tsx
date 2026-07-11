@@ -121,7 +121,16 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
                     rel="noopener noreferrer"
                 >
                     David Hsu
-                </a></td>
+                </a>
+                 <br />
+                <a
+                href="https://scholar.google.com/citations?user=60StejUAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Joel Loo
+                </a>
+    </td>
             </tr>
 
             <tr>
