@@ -14,7 +14,7 @@ const PaperPage: React.FC = () => {
             </p>
             <div className={`${styles.paperItem} ${styles.bestPaper}`}>
               <div className={styles.awardBadge}>
-                 Best Paper Award
+                 Best Paper Award Winner
               </div>
 
               <strong>
