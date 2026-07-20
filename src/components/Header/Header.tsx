@@ -25,7 +25,11 @@ const Header: React.FC = () => {
     <p className={styles.metaSmall}>
       UTS CB11.00.401 (Building 11, Level 00, Room 401)
     </p>
-
+  <p className={styles.metaSmall}>
+       Online: <a href="https://monash.zoom.us/j/81682776264?pwd=xnKMh74jNsqWbVL6Yr1FJbLSdWZcPO.1" target="_blank" rel="noopener noreferrer">
+          Join via Zoom
+        </a>
+      </p>
 
 
       <p className={styles.metaSmall}>

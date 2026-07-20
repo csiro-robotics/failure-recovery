@@ -178,7 +178,7 @@ Evaluating general-purpose robot policies rigorously remains one of robotics' ha
 
             <tr>
               <td>5:25 – 5:55 PM</td>
-              <td>Panel discussion with invited speakers and audience on open challenges in failure detection, reasoning, and recovery</td>
+              <td>Breakout session: Small-group discussions on open challenges in failure detection, reasoning, and recovery.</td>
               <td>Participants/Panelists</td>
             </tr>
 

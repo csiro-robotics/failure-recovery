@@ -5,7 +5,7 @@ import ks from "./KeynoteSpeakers.module.css";
 // import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header";
 //import { Link } from "react-router-dom";
-
+const BASE = import.meta.env.BASE_URL;
 const About: React.FC = () => {
   return (
     <section className={styles.section}>
@@ -50,6 +50,62 @@ const About: React.FC = () => {
         autonomy, accelerating progress toward robots that can not only operate but thrive in
         the real world.
       </p>
+    </section>
+  );
+};
+
+const CommunityDiscussion: React.FC = () => {
+  return (
+    <section className={styles.section}>
+      <h2 id="community-discussion" className={styles.sectionHeading}>
+        Community Contributions
+      </h2>
+
+      <div className={styles.feedbackSection}>
+        <div className={styles.feedbackContent}>
+          <p className={styles.paragraph}>
+            We are building a shared collection of real-world robot failure cases, recovery strategies, and open research questions across robotics. Contributions from researchers, practitioners, and students will help identify challenges, lessons learned, and future research directions, potentially contributing to a community paper on open-world failure recovery for robots.
+          </p>
+
+          <p className={styles.paragraph}>
+            We welcome contributions related to:
+          </p>
+
+          <ul className={styles.list}>
+            <li>Planning</li>
+            <li>Perception and Estimation</li>
+            <li>Human–Robot Interaction (HRI)</li>
+            <li>Manipulation and Control</li>
+            <li>Systems, Hardware, and Multi-Robot Systems</li>
+            <li>Simulation and Modelling</li>
+            <li>Other related areas</li>
+          </ul>
+
+          <p className={styles.paragraph}>
+            <strong>Scan the QR code</strong> or use the{" "}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeWQYp6No8wx1sctHZHn5zPbTgoz8y477M320CDkFpm3DEcMw/viewform?pli=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              online form
+            </a>{" "}
+            to share your ideas. Whether you have an observed failure, a
+            recovery strategy, an open research question, or a speculative
+            idea, contributions of any length are welcome and may help inform
+            future community resources and publications on resilient autonomy
+            and failure recovery.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src={`${BASE}community/open_q.png`}
+            alt="QR code for the community contributions form"
+            className={styles.qrCode}
+          />
+        </div>
+      </div>
     </section>
   );
 };
@@ -105,7 +161,7 @@ const Contact: React.FC = () => {
   );
 };
 
-const BASE = import.meta.env.BASE_URL;
+
 const keynoteSpeakers = [
   { name: "Will Maddern", affiliation: "Wayve", image: `${BASE}speakers/Will_Maddern.jpeg`, url:"https://scholar.google.com/citations?user=eZrWRbMAAAAJ&hl=en" },
   { name: "Stefan Leutenegger", affiliation: "ETH Zurich", image: `${BASE}speakers/Stefan.png`,url:"https://mrl.ethz.ch/the-group/people/lab-members/stefan-leutenegger.html" },
@@ -283,6 +339,7 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         {/* <Links /> */}
         <About />
+        <CommunityDiscussion />
         <DiscussionTopics />
         <KeynoteSpeakers />
         {/* <ScheduleLink /> */}
