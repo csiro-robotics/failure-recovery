@@ -7,6 +7,25 @@ const PaperPage: React.FC = () => {
       <main className={styles.main}>
         <section className={styles.section}>
           <h2 className={styles.sectionHeading}>Accepted Papers</h2>
+             <p className={styles.paragraph}>
+              Congratulations to the authors of{" "}
+              <strong>Uncertainty Quantification for Flow-Based VLAs</strong>{" "}
+              for receiving the Best Paper Award.
+            </p>
+            <div className={`${styles.paperItem} ${styles.bestPaper}`}>
+              <div className={styles.awardBadge}>
+                 Best Paper Award
+              </div>
+
+              <strong>
+                Uncertainty Quantification for Flow-Based VLAs
+              </strong>
+              <br />
+              Ralf Römer; Maximilian Seeliger; Saida Liu; Ben Sturgis; Marco Bagatella; Daniel Marta; Andreas Krause; Angela P. Schoellig
+              <br />
+              Technical University of Munich; ETH Zurich; Technical University of Munich; Technical University of Munich; ETH Zurich; ETH Zurich; ETH Zurich; Technical University of Munich
+            </div>
+
               <div className={styles.noticeBox}>
                 <h3 className={styles.subHeading}>Poster Presentation Instructions</h3>
                 <p>
@@ -57,16 +76,6 @@ const PaperPage: React.FC = () => {
               Ralf Römer; Adrian Kobras; Luca Worbis; Angela P. Schoellig
               <br />
               Technical University of Munich; Technical University of Munich; Technical University of Munich; Technical University of Munich
-            </div>
-
-            <div className={styles.paperItem}>
-              <strong>
-                Uncertainty Quantification for Flow-Based VLAs
-              </strong>
-              <br />
-              Ralf Römer; Maximilian Seeliger; Saida Liu; Ben Sturgis; Marco Bagatella; Daniel Marta; Andreas Krause; Angela P. Schoellig
-              <br />
-              Technical University of Munich; ETH Zurich; Technical University of Munich; Technical University of Munich; ETH Zurich; ETH Zurich; ETH Zurich; Technical University of Munich
             </div>
 
             <div className={styles.paperItem}>
